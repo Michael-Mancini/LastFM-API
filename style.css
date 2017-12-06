@@ -1,0 +1,29 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+form{
+	width: 60%;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+#searchbtn{
+	width: 100px;
+	transition: all 200ms
+}
+
+#searchbtn:hover{
+	width: 200px;
+	cursor: pointer;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 15px;
+}
+
+img{
+	border: 1px solid black;
+}

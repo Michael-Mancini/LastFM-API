@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script src="../jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<title>Last.FM</title>
+
+</head>
+<body>
+
+	<div class="container text-center my-4 py-5">
+		<h1>LastFM API Request</h1>
+		<br>
+		<form id="searchForm">
+			<input id="alb" class="form-control" type="text" placeholder="Enter album title">
+			<br>
+			<input id="art" class="form-control" type="text" placeholder="Enter artist name">
+			<br>
+			<input type="submit" id="searchbtn" class="btn btn-dark" value="Search"></input>
+		</form>
+	</div>
+
+	<section class="container">
+		<div class="text-center">
+			<div class="text-center" style="display: inline-block;padding-right: 20px;">
+				<h4 id="artist"></h4>
+				<p id="album"></p>
+				<div id="img"></div>
+			</div>
+			<div class="text-center" style="display: inline-block;padding-left: 20px;">
+				<h3 id="sugHeading" style="display: none;padding-left: 20px;">Here are some more albums by that artist:</h3>
+				<br>
+				<ul id="suggestions"></ul>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
